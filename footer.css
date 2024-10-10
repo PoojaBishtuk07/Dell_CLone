@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+.footer ::selection{
+    color: white;
+    background-color: #056138;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+ul a{
+    text-decoration: none;
+    color: black;
+}
+
+/* footer section css here  */
+
+.foot-a{
+    width: 100%;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #F6F6F6;
+}
+
+.foot-a div:nth-child(1) li:hover,
+.foot-a div:nth-child(2) li:hover{
+    cursor: pointer;
+}
+
+
+.fsec ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+[type="email"]{
+    width: 12rem;
+    height: 2.2rem;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 0.25rem;
+    padding-left: 1rem;
+    outline: none;
+}
+
+
+.fsec button{
+    padding: 0.5rem;
+    background-color: #056138;
+    color: #F6F6F6;
+    border: none;
+}
+.fsec button:hover{
+    color: #056138;
+    background-color: white;
+    border: 1px solid #056138;
+}
+
+.foot-b ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.foot-b{
+    width: 80%;
+    padding: 0.5rem 0.2rem;
+    margin: auto;
+    font-size: 0.8rem;
+}
+.foot-b img{
+    width: 12rem;
+}
+
+.foot-b p{
+    font-size: 0.8rem;
+}
+
+.scroll-up{
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.1rem;
+}
+
+.fa-angle-up{
+    color:white;
+    padding: 0.8rem;
+}
+
+@media (max-width:600px){
+    .foot-a{
+        flex-direction: column;
+        gap: 1.3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .foot-b>ul{
+        flex-direction: column;
+        row-gap: 1rem;
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .foot-b img{
+        width: 8rem;
+    }
+}

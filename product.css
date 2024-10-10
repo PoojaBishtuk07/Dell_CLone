@@ -1,0 +1,119 @@
+.main{
+    width: 15rem;
+    height: 20rem;
+    /* border: 1px solid rgb(16, 15, 15); */
+    background-color: azure;
+    box-shadow: 1px 1px 4px 0px rgba(1, 1, 1, 0.5);
+    border-radius: 5px;
+}
+
+.main>.info{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    padding: 1rem 0rem;
+}
+
+.lappy{
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+.image1{
+    background-image: url(image1.avif);
+    background-size: cover;
+    scale: 0.9;
+    background-repeat: no-repeat;
+    background-position:-2.7rem -1.5rem;
+}
+
+.image3{
+    background-image: url(image3.avif);
+    background-size: cover;
+    scale: 1.04;
+    background-position:-2.7rem -2rem;
+}
+
+.image2{
+    background-image: url(image5.avif);
+    background-size: cover;
+    background-position:-2.7rem -2rem;
+}
+.image4{
+    background-image: url(image4.avif);
+    background-size: cover;
+    background-position:-2.7rem -2rem;
+}
+
+.image5{
+    background-image: url(image6.avif);
+    background-size: cover;
+    scale: 1.04;
+    background-position:-2.7rem -2rem;
+}
+
+.image6{
+    background-image: url(image2.avif);
+    background-size: contain;
+    scale: 1.03;
+    background-repeat: no-repeat;
+    background-position: 0rem 0.6rem;
+}
+
+.image7{
+    background-image: url(image5.avif);
+    background-size: cover;
+    background-position:-2.7rem -2rem;
+}
+.image8{
+    background-image: url(image2.avif);
+    background-size: contain;
+    scale: 1.03;
+    background-repeat: no-repeat;
+    background-position: 0rem 0.6rem;
+}
+
+
+
+.child{
+    width: 100%;
+    height: 60%;
+    padding: 1.5rem 1rem 0 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:end;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    position: absolute;
+display: none;
+}
+
+.lappy:hover .child{
+  display: flex;
+}
+
+.icon{
+    border: 1px solid rgb(206, 206, 206);
+    padding: .5rem;
+    border-radius: 100%;
+    background-color: rgb(251, 251, 251);
+}
+
+
+@media (max-width:640px){
+    .card{
+        width: 95%;
+        flex-direction: column;
+    }
+}
